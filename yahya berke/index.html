@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yahya Berke Özçubukcu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">YB</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">YB<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home"         data-tr="Ana Sayfa"     data-en="Home">Ana Sayfa</a></li>
+      <li><a href="#about"        data-tr="Hakkımda"      data-en="About">Hakkımda</a></li>
+      <li><a href="#projects"     data-tr="Projeler"      data-en="Projects">Projeler</a></li>
+      <li><a href="#skills"       data-tr="Beceriler"     data-en="Skills">Beceriler</a></li>
+      <li><a href="#experience"   data-tr="Deneyim"       data-en="Experience">Deneyim</a></li>
+      <li><a href="#education"    data-tr="Eğitim"        data-en="Education">Eğitim</a></li>
+      <li><a href="#certificates" data-tr="Sertifikalar"  data-en="Certificates">Sertifikalar</a></li>
+      <li><a href="#contact"      data-tr="İletişim"      data-en="Contact">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn active" data-lang="tr">
+          <img src="https://flagcdn.com/w20/tr.png" alt="" onerror="this.style.display='none'"/><span>TR</span>
+        </button>
+        <button class="lang-btn" data-lang="en">
+          <img src="https://flagcdn.com/w20/gb.png" alt="" onerror="this.style.display='none'"/><span>EN</span>
+        </button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home"         data-tr="Ana Sayfa"     data-en="Home">Ana Sayfa</a></li>
+      <li><a href="#about"        data-tr="Hakkımda"      data-en="About">Hakkımda</a></li>
+      <li><a href="#projects"     data-tr="Projeler"      data-en="Projects">Projeler</a></li>
+      <li><a href="#skills"       data-tr="Beceriler"     data-en="Skills">Beceriler</a></li>
+      <li><a href="#experience"   data-tr="Deneyim"       data-en="Experience">Deneyim</a></li>
+      <li><a href="#education"    data-tr="Eğitim"        data-en="Education">Eğitim</a></li>
+      <li><a href="#certificates" data-tr="Sertifikalar"  data-en="Certificates">Sertifikalar</a></li>
+      <li><a href="#contact"      data-tr="İletişim"      data-en="Contact">İletişim</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="status-dot"></span>
+        <span data-tr="Staj Fırsatlarına Açık" data-en="Open to Internship Opportunities">Staj Fırsatlarına Açık</span>
+      </div>
+      <h1 class="hero-name reveal-up delay-1">
+        Yahya Berke<br/><span class="gradient-text">Özçubukcu</span>
+      </h1>
+      <div class="hero-role reveal-up delay-2">
+        <span data-tr="Ben bir " data-en="I'm a ">Ben bir </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal-up delay-3"
+         data-tr="Nişantaşı Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisi. Öğrendiklerimi gerçek projelere dönüştürüyor, her satır kodda büyüyorum. Sizi de bu yolculuğa ortak etmek istiyorum."
+         data-en="3rd year Computer Engineering student at Nişantaşı University. I turn what I learn into real projects and grow with every line of code. I want to bring that drive to your team.">
+        Nişantaşı Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisi. Öğrendiklerimi gerçek projelere dönüştürüyor, her satır kodda büyüyorum. Sizi de bu yolculuğa ortak etmek istiyorum.
+      </p>
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#projects" class="btn btn-primary" data-tr="Projeleri Gör" data-en="View Projects">Projeleri Gör</a>
+        <a href="#contact"  class="btn btn-ghost"   data-tr="İletişime Geç" data-en="Contact Me">İletişime Geç</a>
+        <a href="CV_Yahya_Berke_Ozcubukcu.pdf" download class="btn btn-cv" data-tr="CV İndir" data-en="Download CV">
+          <i class="ri-download-2-fill"></i>
+          <span data-tr="CV İndir" data-en="Download CV">CV İndir</span>
+        </a>
+      </div>
+      <div class="hero-socials reveal-up delay-5">
+        <a href="https://github.com/yahyaberke" target="_blank" title="GitHub"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/yahya-berke-özçubukcu-112515299/" target="_blank" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="mailto:yahyaberkeozcubukcu@gmail.com" title="E-posta"><i class="ri-mail-fill"></i></a>
+        <a href="tel:+905511747551" title="Telefon"><i class="ri-phone-fill"></i></a>
+        <a href="https://buymeacoffee.com/yahyaberke" target="_blank" title="Buy Me a Coffee"><i class="ri-cup-fill"></i></a>
+        <a href="https://www.youthall.com/tr/me/yahyaberke/" target="_blank" title="Youthall"><i class="ri-user-star-fill"></i></a>
+        <a href="https://www.tff.org/Default.aspx?pageID=531&hakemID=2793559" target="_blank" title="TFF Hakem Profili"><i class="ri-football-fill"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span data-tr="Aşağı Kaydır" data-en="Scroll Down">Aşağı Kaydır</span>
+    </div>
+  </section>
+
+  <!-- UEFA BANNER -->
+  <div class="uefa-banner">
+    <div class="container">
+      <div class="uefa-inner reveal-up">
+        <div class="uefa-icon"><i class="ri-trophy-fill"></i></div>
+        <div class="uefa-text">
+          <strong data-tr="UEFA Europa League Final 2026 — Resmi Gönüllü 🏆" data-en="UEFA Europa League Final 2026 — Official Volunteer 🏆">
+            UEFA Europa League Final 2026 — Resmi Gönüllü 🏆
+          </strong>
+          <span
+            data-tr="UEFA Europa League, dünyanın en prestijli ikinci kulüp futbol turnuvası. 2026 Finali İstanbul'da düzenleniyor — UEFA tarafından seçilmiş gönüllüler arasındayım. Akreditasyon, saha koordinasyonu ve uluslararası misafir yönetimi alanlarında görev alıyorum."
+            data-en="UEFA Europa League is the world's 2nd most prestigious club football tournament. The 2026 Final is in Istanbul — I'm among volunteers selected by UEFA, working in accreditation, field coordination, and international guest management.">
+            UEFA Europa League, dünyanın en prestijli ikinci kulüp futbol turnuvası. 2026 Finali İstanbul'da düzenleniyor — UEFA tarafından seçilmiş gönüllüler arasındayım. Akreditasyon, saha koordinasyonu ve uluslararası misafir yönetimi alanlarında görev alıyorum.
+          </span>
+        </div>
+        <div class="uefa-actions">
+          <a href="https://www.uefa.com/uefaeuropaleague/" target="_blank" class="uefa-link">
+            <i class="ri-external-link-fill"></i>
+            <span data-tr="Resmi Site" data-en="Official Site">Resmi Site</span>
+          </a>
+          <div class="uefa-badge">#istanbul26volunteers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag" data-tr="Hakkımda" data-en="About Me">Hakkımda</span>
+        <h2 data-tr="Kim Olduğumu <span class='gradient-text'>Öğren</span>" data-en="Get To <span class='gradient-text'>Know Me</span>">Kim Olduğumu <span class="gradient-text">Öğren</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-card-wrap">
+            <div class="about-photo-placeholder">
+              <div class="initials-badge">YB</div>
+              <div class="photo-ring"></div>
+              <div class="photo-ring ring-2"></div>
+            </div>
+            <div class="about-stat-cards">
+              <div class="stat-card glass">
+                <span class="stat-num" data-count="10">0</span>+
+                <span class="stat-label" data-tr="Proje" data-en="Projects">Proje</span>
+              </div>
+              <div class="stat-card glass">
+                <span class="stat-num" data-count="3">0</span>+
+                <span class="stat-label" data-tr="Yıl Kod" data-en="Yrs Coding">Yıl Kod</span>
+              </div>
+              <div class="stat-card glass">
+                <span class="stat-num" data-count="6">0</span>+
+                <span class="stat-label" data-tr="Sertifika" data-en="Certificates">Sertifika</span>
+              </div>
+            </div>
+          </div>
+          <!-- Language badges -->
+          <div class="lang-badges">
+            <div class="lang-badge glass">
+              <span class="flag-label tr-flag">TR</span>
+              <span data-tr="Türkçe — Anadil" data-en="Turkish — Native">Türkçe — Anadil</span>
+            </div>
+            <div class="lang-badge glass">
+              <span class="flag-label gb-flag">EN</span>
+              <span data-tr="İngilizce — B2" data-en="English — B2">İngilizce — B2</span>
+            </div>
+            <div class="lang-badge glass">
+              <span class="flag-label de-flag">DE</span>
+              <span data-tr="Almanca — A2" data-en="German — A2">Almanca — A2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <p class="about-lead"
+             data-tr="Merhaba! Ben Yahya Berke — İstanbul/Pendik'te yaşayan, Nişantaşı Üniversitesi'nde Bilgisayar Mühendisliği 3. sınıf öğrencisiyim."
+             data-en="Hello! I'm Yahya Berke — a 3rd year Computer Engineering student at Nişantaşı University, based in Istanbul/Pendik.">
+            Merhaba! Ben Yahya Berke — İstanbul/Pendik'te yaşayan, Nişantaşı Üniversitesi'nde Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.
+          </p>
+          <p data-tr="Python'dan C++'a, web geliştirmeden Flutter'a, bilgisayar görüsünden veri analizine kadar geniş bir yelpazede projeler geliştiriyorum. Udemy, Turkcell Geleceği Yazanlar ve BTK Akademi gibi platformlarla kendimi sürekli yeniliyorum."
+             data-en="I build projects spanning Python to C++, web development to Flutter, and computer vision to data analysis. I constantly sharpen my skills via Udemy, Turkcell Geleceği Yazanlar, and BTK Akademi.">
+            Python'dan C++'a, web geliştirmeden Flutter'a, bilgisayar görüsünden veri analizine kadar geniş bir yelpazede projeler geliştiriyorum. Udemy, Turkcell ve BTK Akademi ile kendimi sürekli yeniliyorum.
+          </p>
+          <p data-tr="TFF lisanslı aktif bir futbol hakemiyim; sahada verdiğim anlık kararlar bana baskı altında soğukkanlılık, liderlik ve disiplin kazandırdı. Sosyal sorumluluk anlayışımla Anadolu Üniversitesi Sosyal Hizmetler programını da sürdürüyorum."
+             data-en="As an active TFF-licensed football referee, on-field decisions built my composure under pressure, leadership, and discipline. I also pursue Anadolu University's Social Services program out of a drive for social impact.">
+            TFF lisanslı aktif bir futbol hakemiyim; sahada verdiğim anlık kararlar baskı altında soğukkanlılık ve liderlik becerisi kazandırdı. Anadolu Üniversitesi Sosyal Hizmetler programını da sürdürüyorum.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="ri-graduation-cap-fill"></i>
+              <span data-tr="Bil. Müh. — Nişantaşı Üni." data-en="Comp. Eng. — Nişantaşı Uni.">Bil. Müh. — Nişantaşı Üni.</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ri-trophy-fill"></i>
+              <span data-tr="UEFA EL Final 2026 Gönüllüsü" data-en="UEFA EL Final 2026 Volunteer">UEFA EL Final 2026 Gönüllüsü</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ri-football-fill"></i>
+              <span data-tr="TFF Lisanslı Hakem" data-en="TFF Licensed Referee">TFF Lisanslı Hakem</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ri-smartphone-fill"></i>
+              <span data-tr="Flutter Öğreniyor" data-en="Learning Flutter">Flutter Öğreniyor</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ri-search-2-line"></i>
+              <span data-tr="Staj Arıyorum" data-en="Seeking Internship">Staj Arıyorum</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ri-car-fill"></i>
+              <span data-tr="Ehliyet: B, AM" data-en="Driving Licence: B, AM">Ehliyet: B, AM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag" data-tr="Projeler" data-en="Projects">Projeler</span>
+        <h2 data-tr="Neler <span class='gradient-text'>Yaptım</span>" data-en="What I've <span class='gradient-text'>Built</span>">Neler <span class="gradient-text">Yaptım</span></h2>
+      </div>
+      <div class="filter-btns reveal-up">
+        <button class="filter-btn active" data-filter="all"    data-tr="Tümü"       data-en="All">Tümü</button>
+        <button class="filter-btn"        data-filter="web"    data-tr="Web"        data-en="Web">Web</button>
+        <button class="filter-btn"        data-filter="game"   data-tr="Oyun"       data-en="Game">Oyun</button>
+        <button class="filter-btn"        data-filter="python" data-tr="Python"     data-en="Python">Python</button>
+        <button class="filter-btn"        data-filter="ai"     data-tr="Yapay Zeka" data-en="AI">Yapay Zeka</button>
+        <button class="filter-btn"        data-filter="sys"    data-tr="Sistem"     data-en="System">Sistem</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass reveal-up" data-category="game">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-orange"><i class="ri-gamepad-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h3 data-tr="Mini Arcade Oyun Koleksiyonu" data-en="Mini Arcade Game Collection">Mini Arcade Oyun Koleksiyonu</h3>
+          <p data-tr="Snake, Pong, Tetris ve Flappy Bird oyunlarını saf HTML, CSS ve JavaScript ile sıfırdan geliştirdim. Oyun mantığı ve tarayıcı performansına odaklandım." data-en="Built Snake, Pong, Tetris, and Flappy Bird from scratch using pure HTML, CSS, and JavaScript. Focused on game logic and browser performance.">Snake, Pong, Tetris ve Flappy Bird — saf HTML, CSS ve JavaScript ile sıfırdan geliştirildi.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="project-card glass reveal-up delay-1" data-category="sys">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-yellow"><i class="ri-cpu-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h3 data-tr="CPU Zamanlama Algoritmaları" data-en="CPU Scheduling Algorithms">CPU Zamanlama Algoritmaları</h3>
+          <p data-tr="İşletim Sistemi dersi kapsamında FCFS, SJF (preemptive/non-preemptive), Round Robin ve Priority Scheduling algoritmalarını C ile implemente ettim." data-en="Implemented FCFS, SJF (preemptive/non-preemptive), Round Robin and Priority Scheduling in C as part of OS coursework.">FCFS, SJF (preemptive/non-preemptive), Round Robin ve Priority Scheduling — İşletim Sistemi dersi projesi.</p>
+          <div class="project-tags"><span>C</span><span>OS Concepts</span><span>Algorithms</span></div>
+        </div>
+
+        <div class="project-card glass reveal-up delay-2" data-category="python">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-teal"><i class="ri-bank-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h3 data-tr="ATM Simülasyonu" data-en="ATM Simulation">ATM Simülasyonu</h3>
+          <p data-tr="Kimlik doğrulama, para yatırma/çekme ve temel işlem yönetimi özelliklerine sahip Python ATM simülasyon sistemi." data-en="Python ATM simulation with authentication, deposit/withdrawal, and basic transaction management.">Kimlik doğrulama, para yatırma/çekme ve temel işlem yönetimi özellikli Python ATM simülasyonu.</p>
+          <div class="project-tags"><span>Python</span><span>OOP</span><span>File I/O</span></div>
+        </div>
+
+        <div class="project-card glass reveal-up" data-category="python">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-purple"><i class="ri-lock-password-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h3 data-tr="Şifre Üreteci" data-en="Password Generator">Şifre Üreteci</h3>
+          <p data-tr="Algoritma tabanlı ve CLI versiyonları olan, güvenli ve özelleştirilebilir şifre üretme aracı." data-en="Secure, customizable password generation tool with algorithm-based and CLI versions.">Algoritma tabanlı ve CLI olmak üzere iki versiyonda geliştirilen güvenli şifre üreteci.</p>
+          <div class="project-tags"><span>Python</span><span>CLI</span><span>Security</span></div>
+        </div>
+
+        <div class="project-card glass reveal-up delay-1" data-category="ai">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-lime"><i class="ri-bar-chart-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h3 data-tr="Spotify Veri Analizi" data-en="Spotify Data Analysis">Spotify Veri Analizi</h3>
+          <p data-tr="Spotify veri setleri üzerinde Python ile veri analizi ve görselleştirme; grafikler ve istatistiklerle anlamlı içgörüler." data-en="Data analysis and visualization on Spotify datasets using Python, extracting insights through charts and statistics.">Spotify veri setleri üzerinde Python ile analiz; Pandas ve Matplotlib ile görselleştirme.</p>
+          <div class="project-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+        </div>
+
+        <div class="project-card glass reveal-up delay-2" data-category="ai">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-blue"><i class="ri-hand-coin-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h3 data-tr="El Tanıma Sistemi" data-en="Hand Recognition System">El Tanıma Sistemi</h3>
+          <p data-tr="Bilgisayar görüsü teknikleri ile gerçek zamanlı el tespiti ve takibi. OpenCV ve Mediapipe ile geliştirildi." data-en="Real-time hand detection and tracking using computer vision techniques with OpenCV and Mediapipe.">OpenCV ve Mediapipe kullanılarak geliştirilen gerçek zamanlı el tespiti ve takibi uygulaması.</p>
+          <div class="project-tags"><span>Python</span><span>OpenCV</span><span>Mediapipe</span></div>
+        </div>
+
+        <div class="project-card glass reveal-up" data-category="web">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-indigo"><i class="ri-layout-masonry-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h3 data-tr="İnteraktif Web Uygulamaları" data-en="Interactive Web Applications">İnteraktif Web Uygulamaları</h3>
+          <p data-tr="UX, dinamik arayüzler ve yaratıcı UI tasarımına odaklanan responsive web uygulamaları. To-do, hesap makinesi ve organizasyon araçları dahil." data-en="Responsive web apps focused on UX, dynamic interfaces, and creative UI. Includes to-do apps, calculators, and organizational tools.">UX ve yaratıcı UI odaklı responsive web uygulamaları; to-do, hesap makinesi ve organizasyon araçları.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UX/UI</span></div>
+        </div>
+
+        <div class="project-card glass reveal-up delay-1" data-category="web">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-rose"><i class="ri-briefcase-4-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h3 data-tr="Kişisel Portfolyo Sitesi" data-en="Personal Portfolio Website">Kişisel Portfolyo Sitesi</h3>
+          <p data-tr="Projelerimi ve becerilerimi sergilemek için sıfırdan geliştirdiğim bu site; glassmorphism, scroll animasyonları ve TR/EN dil desteği içeriyor." data-en="This portfolio built from scratch featuring glassmorphism, scroll animations, and TR/EN language support.">Glassmorphism, scroll animasyonları ve TR/EN dil desteği içeren kişisel portfolyo sitesi.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="project-card glass reveal-up delay-2" data-category="web">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="ri-smartphone-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <span class="project-wip-badge" data-tr="Devam Ediyor" data-en="In Progress">Devam Ediyor</span>
+          <h3 data-tr="Flutter Mobil Uygulama" data-en="Flutter Mobile App">Flutter Mobil Uygulama</h3>
+          <p data-tr="Flutter ile cross-platform mobil uygulama geliştirme öğreniliyor; UI/UX ve uygulama mimarisine odaklanılıyor." data-en="Learning cross-platform mobile development with Flutter, focusing on UI/UX and app architecture.">Flutter ile cross-platform mobil uygulama geliştirme — UI/UX ve uygulama mimarisine odaklanılıyor.</p>
+          <div class="project-tags"><span>Flutter</span><span>Dart</span><span>Mobile</span></div>
+        </div>
+
+        <!-- Pregnancy Tracker -->
+        <div class="project-card glass reveal-up" data-category="web">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-pink"><i class="ri-heart-pulse-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <span class="project-wip-badge" data-tr="Geliştiriliyor" data-en="In Development">Geliştiriliyor</span>
+          <h3 data-tr="Hamilelik Takip Sitesi" data-en="Pregnancy Tracking Website">Hamilelik Takip Sitesi</h3>
+          <p data-tr="Trimester bazlı beslenme rehberi, haftalık gelişim takibi, günlük kalori hedefi ve besin önerileri sunan kapsamlı web uygulaması. Uzman videoları ve topluluk özellikleri de planlanıyor." data-en="Comprehensive web app offering trimester-based nutrition guide, weekly development tracking, daily calorie goals, and food suggestions. Expert videos and community features also planned.">Trimester bazlı beslenme rehberi, haftalık gelişim takibi ve günlük kalori hedefi sunan kapsamlı web uygulaması.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UX/UI</span></div>
+        </div>
+
+        <!-- Health Analyzer -->
+        <div class="project-card glass reveal-up delay-1" data-category="python">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon project-icon-green"><i class="ri-pulse-fill"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yahyaberke" target="_blank" class="project-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <span class="project-wip-badge" data-tr="Geliştiriliyor" data-en="In Development">Geliştiriliyor</span>
+          <h3 data-tr="Sağlık Analiz Uygulaması" data-en="Health Analysis App">Sağlık Analiz Uygulaması</h3>
+          <p data-tr="Nabız, tansiyon ve stres verilerini analiz eden Python uygulaması. Ölçüm sonuçlarına göre kişiye özel beslenme, uyku ve egzersiz önerileri sunuluyor." data-en="Python app that analyzes pulse, blood pressure, and stress data. Provides personalized nutrition, sleep, and exercise recommendations based on measurements.">Nabız, tansiyon ve stres ölçümlerini analiz edip kişiye özel beslenme, uyku ve egzersiz önerileri sunan Python uygulaması.</p>
+          <div class="project-tags"><span>Python</span><span>Data Analysis</span><span>Health Tech</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag" data-tr="Beceriler" data-en="Skills">Beceriler</span>
+        <h2 data-tr="Teknik <span class='gradient-text'>Araç Kutum</span>" data-en="My Technical <span class='gradient-text'>Toolkit</span>">Teknik <span class="gradient-text">Araç Kutum</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category glass reveal-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="ri-html5-fill"></i></div>
+            <h3 data-tr="Frontend & Web" data-en="Frontend & Web">Frontend & Web</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>HTML5 / CSS3</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>JavaScript</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>React <span class="learning-tag" data-tr="öğreniyor" data-en="learning">öğreniyor</span></span>
+                <span class="skill-pct">40%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="40"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="ri-code-s-slash-fill"></i></div>
+            <h3 data-tr="Backend & Diller" data-en="Backend & Languages">Backend & Diller</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Python</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C / C++</span><span class="skill-pct">72%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Java</span><span class="skill-pct">55%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="55"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="ri-smartphone-fill"></i></div>
+            <h3 data-tr="Mobil & Yeni Teknolojiler" data-en="Mobile & Emerging Tech">Mobil & Yeni Teknolojiler</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Flutter / Dart <span class="learning-tag" data-tr="öğreniyor" data-en="learning">öğreniyor</span></span>
+                <span class="skill-pct">35%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="35"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Blockchain / Web3</span><span class="skill-pct">30%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="30"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="ri-eye-2-fill"></i></div>
+            <h3 data-tr="Yapay Zeka & Görü" data-en="AI & Computer Vision">Yapay Zeka & Görü</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>OpenCV</span><span class="skill-pct">72%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Mediapipe</span><span class="skill-pct">65%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>DeepFace</span><span class="skill-pct">58%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="58"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="ri-tools-fill"></i></div>
+            <h3 data-tr="Araçlar & Ortam" data-en="Tools & Environment">Araçlar & Ortam</h3>
+          </div>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag"><i class="ri-github-fill"></i> Git / GitHub</span>
+            <span class="skill-tag"><i class="ri-terminal-box-fill"></i> Linux</span>
+            <span class="skill-tag"><i class="ri-code-box-fill"></i> VS Code</span>
+            <span class="skill-tag"><i class="ri-database-2-fill"></i> SQL</span>
+            <span class="skill-tag"><i class="ri-command-fill"></i> Bash</span>
+            <span class="skill-tag"><i class="ri-bug-fill"></i> GDB</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="ri-translate-2"></i></div>
+            <h3 data-tr="Dil Becerileri" data-en="Languages">Dil Becerileri</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span><span class="flag-label tr-flag">TR</span> Türkçe</span>
+                <span class="skill-pct" data-tr="Anadil" data-en="Native">Anadil</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span><span class="flag-label gb-flag">EN</span> İngilizce</span>
+                <span class="skill-pct">B2</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="68"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span><span class="flag-label de-flag">DE</span> Almanca</span>
+                <span class="skill-pct">A2</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="28"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag" data-tr="Deneyim" data-en="Experience">Deneyim</span>
+        <h2 data-tr="Sahada & <span class='gradient-text'>Ekranda</span>" data-en="On the Field & <span class='gradient-text'>On Screen</span>">Sahada & <span class="gradient-text">Ekranda</span></h2>
+      </div>
+      <div class="experience-timeline">
+
+        <!-- Freelance -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div class="tl-icon"><i class="ri-laptop-fill"></i></div>
+              <div>
+                <h3 data-tr="Freelance Yazılım Geliştirici" data-en="Freelance Software Developer">Freelance Yazılım Geliştirici</h3>
+                <span class="tl-org">Self-Employed · İstanbul</span>
+                <span class="tl-meta">Haz 2025 – Ağu 2025</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li data-tr="HTML, CSS ve JavaScript kullanarak responsive web uygulamaları geliştirdim." data-en="Developed responsive web applications using HTML, CSS, and JavaScript.">HTML, CSS ve JavaScript kullanarak responsive web uygulamaları geliştirdim.</li>
+              <li data-tr="İnteraktif kullanıcı arayüzleri ve küçük ölçekli projeler oluşturdum." data-en="Built interactive user interfaces and small-scale projects.">İnteraktif kullanıcı arayüzleri ve küçük ölçekli projeler oluşturdum.</li>
+              <li data-tr="Problem çözme ve hata ayıklama becerilerimi geliştirdim." data-en="Improved problem-solving and debugging skills.">Problem çözme ve hata ayıklama becerilerimi geliştirdim.</li>
+            </ul>
+            <div class="tl-skills">
+              <span>HTML/CSS/JS</span>
+              <span data-tr="Responsive Tasarım" data-en="Responsive Design">Responsive Tasarım</span>
+              <span>UX/UI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- UEFA -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot tl-dot-gold"></div>
+          <div class="timeline-card glass tl-card-featured">
+            <div class="tl-featured-label" data-tr="Öne Çıkan" data-en="Featured">Öne Çıkan</div>
+            <div class="tl-header">
+              <div class="tl-icon tl-icon-gold"><i class="ri-trophy-fill"></i></div>
+              <div>
+                <h3 data-tr="UEFA Europa League Final 2026 Gönüllüsü" data-en="UEFA Europa League Final 2026 Volunteer">UEFA Europa League Final 2026 Gönüllüsü</h3>
+                <span class="tl-org">UEFA · İstanbul</span>
+                <span class="tl-meta" data-tr="Mayıs 2026" data-en="May 2026">Mayıs 2026</span>
+              </div>
+            </div>
+            <p data-tr="UEFA tarafından düzenlenen Europa League Final 2026 etkinliğinde resmi gönüllü olarak seçildim. Uluslararası iletişim, ekip koordinasyonu ve yüksek baskı altında çalışma deneyimi kazandım." data-en="Selected as an official volunteer for the UEFA Europa League Final 2026. Gained experience in international communication, team coordination, and working under high pressure.">
+              UEFA tarafından düzenlenen Europa League Final 2026'da resmi gönüllü olarak seçildim. Uluslararası iletişim, ekip koordinasyonu ve yüksek baskı altında çalışma deneyimi kazandım.
+            </p>
+            <div class="tl-skills">
+              <span data-tr="Uluslararası Etkinlik" data-en="International Event">Uluslararası Etkinlik</span>
+              <span data-tr="Ekip Koordinasyonu" data-en="Team Coordination">Ekip Koordinasyonu</span>
+              <span>#istanbul26volunteers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TFF Referee -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div class="tl-icon"><i class="ri-football-fill"></i></div>
+              <div>
+                <h3 data-tr="Aktif Futbol Hakemi" data-en="Active Football Referee">Aktif Futbol Hakemi</h3>
+                <span class="tl-org">TFF — Türkiye Futbol Federasyonu</span>
+                <span class="tl-meta">2021 – <span data-tr="Günümüz" data-en="Present">Günümüz</span></span>
+              </div>
+            </div>
+            <p data-tr="TFF lisansıyla rekabetçi gençlik ligi maçlarında aktif hakem olarak görev yapıyorum. Yüksek baskı altında hızlı karar verme, liderlik ve dinamik ortamlarda kontrolü sürdürme konusunda derin deneyim kazandım." data-en="Actively officiating competitive youth league matches under TFF license. Deep experience in quick decision-making under pressure, leadership, and maintaining control in dynamic environments.">
+              TFF lisansıyla rekabetçi gençlik ligi maçlarında aktif hakem olarak görev yapıyorum. Baskı altında hızlı karar verme ve liderlik becerilerimi sahada pekiştiriyorum.
+            </p>
+            <a href="https://www.tff.org/Default.aspx?pageID=531&hakemID=2793559" target="_blank" class="tl-ext-link">
+              <i class="ri-external-link-fill"></i>
+              <span data-tr="TFF Hakem Profilim" data-en="My TFF Referee Profile">TFF Hakem Profilim</span>
+            </a>
+            <div class="tl-skills">
+              <span data-tr="Baskı Yönetimi" data-en="Pressure Management">Baskı Yönetimi</span>
+              <span data-tr="Liderlik" data-en="Leadership">Liderlik</span>
+              <span data-tr="Hızlı Karar" data-en="Quick Decisions">Hızlı Karar</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="soft-skills-wrap reveal-up">
+        <h3 class="soft-skills-title" data-tr="Yumuşak Beceriler" data-en="Soft Skills">Yumuşak Beceriler</h3>
+        <div class="soft-skills-grid">
+          <div class="soft-skill-item glass"><i class="ri-focus-3-fill"></i><span data-tr="Analitik Düşünce" data-en="Analytical Thinking">Analitik Düşünce</span></div>
+          <div class="soft-skill-item glass"><i class="ri-chat-smile-3-fill"></i><span data-tr="İletişim" data-en="Communication">İletişim</span></div>
+          <div class="soft-skill-item glass"><i class="ri-mental-health-fill"></i><span data-tr="Stres Yönetimi" data-en="Stress Management">Stres Yönetimi</span></div>
+          <div class="soft-skill-item glass"><i class="ri-refresh-fill"></i><span data-tr="Hızlı Uyum" data-en="Fast Adaptation">Hızlı Uyum</span></div>
+          <div class="soft-skill-item glass"><i class="ri-lightbulb-flash-fill"></i><span data-tr="Yaratıcı Çözüm" data-en="Creative Solutions">Yaratıcı Çözüm</span></div>
+          <div class="soft-skill-item glass"><i class="ri-time-fill"></i><span data-tr="Zaman Yönetimi" data-en="Time Management">Zaman Yönetimi</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag" data-tr="Eğitim" data-en="Education">Eğitim</span>
+        <h2 data-tr="Akademik <span class='gradient-text'>Yolculuğum</span>" data-en="My Academic <span class='gradient-text'>Journey</span>">Akademik <span class="gradient-text">Yolculuğum</span></h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card glass reveal-up">
+          <div class="edu-icon"><i class="ri-computer-fill"></i></div>
+          <div class="edu-body">
+            <div class="edu-dates">Eki 2023 – Haz 2027</div>
+            <h3 data-tr="Bilgisayar Mühendisliği — 3. Sınıf" data-en="Computer Engineering — 3rd Year">Bilgisayar Mühendisliği — 3. Sınıf</h3>
+            <p class="edu-school">İstanbul Nişantaşı Üniversitesi</p>
+            <p class="edu-desc"
+               data-tr="Algoritma tasarımı, veri yapıları, işletim sistemleri ve yazılım mühendisliği alanlarında kapsamlı lisans eğitimi. Teorik bilgiyi gerçek projelerle pekiştiriyorum."
+               data-en="Comprehensive undergraduate education in algorithm design, data structures, operating systems, and software engineering. Reinforcing theory with real-world projects.">
+              Algoritma tasarımı, veri yapıları, işletim sistemleri ve yazılım mühendisliği — teorik bilgiyi gerçek projelerle pekiştiriyorum.
+            </p>
+            <div class="edu-tags"><span>Algorithms</span><span>Data Structures</span><span>OS</span><span>Software Eng.</span></div>
+          </div>
+        </div>
+
+        <div class="edu-card glass reveal-up delay-1">
+          <div class="edu-icon"><i class="ri-book-open-fill"></i></div>
+          <div class="edu-body">
+            <div class="edu-dates">2025 – Tem 2026</div>
+            <h3 data-tr="Sosyal Hizmetler (Açıköğretim)" data-en="Social Services (Open Education)">Sosyal Hizmetler (Açıköğretim)</h3>
+            <p class="edu-school">Anadolu Üniversitesi</p>
+            <p class="edu-desc"
+               data-tr="Çocuk gelişimi ve sosyal sorumluluk bilinciyle, toplum temelli ve gönüllü etkinliklere katkı sağlamak amacıyla başladım. Teknik alanın ötesinde anlamlı işler yapma motivasyonumu yansıtıyor."
+               data-en="Enrolled out of interest in child development and social responsibility. Reflects my motivation to support social impact and engage in meaningful work beyond technical fields.">
+              Çocuk gelişimi ve sosyal sorumluluk bilinci; toplum temelli gönüllü etkinliklere katkı sağlamak amacıyla başladım.
+            </p>
+            <div class="edu-tags"><span data-tr="Sosyal Sorumluluk" data-en="Social Responsibility">Sosyal Sorumluluk</span><span data-tr="Gönüllülük" data-en="Volunteering">Gönüllülük</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag" data-tr="Sertifikalar & Kurslar" data-en="Certificates & Courses">Sertifikalar & Kurslar</span>
+        <h2 data-tr="Sürekli <span class='gradient-text'>Gelişim</span>" data-en="Continuous <span class='gradient-text'>Growth</span>">Sürekli <span class="gradient-text">Gelişim</span></h2>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card glass reveal-up">
+          <div class="cert-provider prov-turkcell">Turkcell Geleceği Yazanlar</div>
+          <div class="cert-icon"><i class="ri-python-fill"></i></div>
+          <h4 data-tr="Python Sertifika Serisi (101–401)" data-en="Python Certificate Series (101–401)">Python Sertifika Serisi (101–401)</h4>
+          <p data-tr="Python temelleri, OOP, veri yapıları, problem çözme, dosya işleme ve temiz kod uygulamalarını kapsayan kapsamlı program." data-en="Comprehensive program covering Python fundamentals, OOP, data structures, problem-solving, file handling, and clean code practices.">Python temelleri, OOP, veri yapıları, problem çözme ve temiz kod uygulamaları.</p>
+          <span class="cert-date"><i class="ri-calendar-fill"></i> 2026</span>
+        </div>
+
+        <div class="cert-card glass reveal-up delay-1">
+          <div class="cert-provider prov-turkcell">Turkcell Geleceği Yazanlar</div>
+          <div class="cert-icon"><i class="ri-links-fill"></i></div>
+          <h4 data-tr="Blockchain Teknolojileri" data-en="Blockchain Technologies">Blockchain Teknolojileri</h4>
+          <p data-tr="Blockchain, Web3, akıllı kontratlar ve merkezi olmayan sistemlerin temelleri." data-en="Fundamentals of blockchain, Web3, smart contracts, and decentralized systems.">Blockchain, Web3, akıllı kontratlar ve merkezi olmayan sistemlerin temelleri.</p>
+          <span class="cert-date"><i class="ri-calendar-fill"></i> Mar – Nis 2026</span>
+        </div>
+
+        <div class="cert-card glass reveal-up delay-2">
+          <div class="cert-provider prov-udemy">Udemy</div>
+          <div class="cert-icon"><i class="ri-global-fill"></i></div>
+          <h4 data-tr="Web Geliştirme (HTML, CSS, JavaScript)" data-en="Web Development (HTML, CSS, JavaScript)">Web Geliştirme (HTML, CSS, JavaScript)</h4>
+          <p data-tr="Responsive tasarım, DOM manipülasyonu ve interaktif UI geliştirme konularında kapsamlı kurs." data-en="Comprehensive course covering responsive design, DOM manipulation, and interactive UI development.">Responsive tasarım, DOM manipülasyonu ve interaktif UI geliştirme.</p>
+          <span class="cert-date"><i class="ri-calendar-fill"></i> Eki 2025 – May 2026</span>
+        </div>
+
+        <div class="cert-card glass reveal-up">
+          <div class="cert-provider prov-self">Öz-Öğrenme</div>
+          <div class="cert-icon"><i class="ri-smartphone-fill"></i></div>
+          <h4 data-tr="Flutter Geliştirme (Devam Ediyor)" data-en="Flutter Development (Ongoing)">Flutter Geliştirme (Devam Ediyor)</h4>
+          <p data-tr="Flutter ile cross-platform mobil uygulama geliştirme; UI/UX ve uygulama mimarisine odaklanıyor." data-en="Learning cross-platform mobile development with Flutter, focusing on UI/UX and app architecture.">Flutter ile cross-platform mobil uygulama geliştirme — UI/UX ve uygulama mimarisi.</p>
+          <span class="cert-date cert-ongoing"><i class="ri-loader-4-fill"></i> <span data-tr="Devam Ediyor" data-en="Ongoing">Devam Ediyor</span></span>
+        </div>
+
+        <div class="cert-card glass reveal-up delay-1">
+          <div class="cert-provider prov-ntu">Nişantaşı Üniversitesi</div>
+          <div class="cert-icon"><i class="ri-rocket-2-fill"></i></div>
+          <h4 data-tr="Yeni Nesil Teknolojiler Zirvesi" data-en="Next Generation Technologies Summit">Yeni Nesil Teknolojiler Zirvesi</h4>
+          <p data-tr="Gelişen teknolojiler, dijital dönüşüm ve güncel sektör trendlerine odaklanan zirve. Sektör profesyonellerinden içgörüler edinildi." data-en="Summit focused on emerging technologies, digital transformation, and current industry trends. Gained insights from industry professionals.">Gelişen teknolojiler ve dijital dönüşüm odaklı zirve — sektör profesyonellerinden içgörüler.</p>
+          <span class="cert-date"><i class="ri-calendar-fill"></i> Mar – Nis 2026</span>
+        </div>
+
+        <div class="cert-card glass reveal-up delay-2">
+          <div class="cert-provider prov-ntu">Nişantaşı Üniversitesi</div>
+          <div class="cert-icon"><i class="ri-shield-star-fill"></i></div>
+          <h4 data-tr="Afet Farkındalık Eğitim Programı" data-en="Disaster Awareness Training">Afet Farkındalık Eğitim Programı</h4>
+          <p data-tr="Afet farkındalığı, acil müdahale ve risk yönetimi konularında eğitim alındı." data-en="Training on disaster awareness, emergency response, and risk management.">Afet farkındalığı, acil müdahale ve risk yönetimi konularında eğitim.</p>
+          <span class="cert-date"><i class="ri-calendar-fill"></i> May – Haz 2024</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag" data-tr="İletişim" data-en="Contact">İletişim</span>
+        <h2 data-tr="Birlikte <span class='gradient-text'>Çalışalım</span>" data-en="Let's <span class='gradient-text'>Work Together</span>">Birlikte <span class="gradient-text">Çalışalım</span></h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-left">
+          <p class="contact-intro"
+             data-tr="Staj fırsatları veya proje işbirlikleri için benimle iletişime geçin. En kısa sürede yanıt veririm!"
+             data-en="Feel free to reach out for internship opportunities or project collaborations. I'll get back to you ASAP!">
+            Staj fırsatları veya proje işbirlikleri için benimle iletişime geçin. En kısa sürede yanıt veririm!
+          </p>
+          <div class="contact-items">
+            <a href="mailto:yahyaberkeozcubukcu@gmail.com" class="contact-item glass">
+              <div class="ci-icon"><i class="ri-mail-fill"></i></div>
+              <div>
+                <span class="ci-label" data-tr="E-posta" data-en="Email">E-posta</span>
+                <span class="ci-val">yahyaberkeozcubukcu@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+905511747551" class="contact-item glass">
+              <div class="ci-icon"><i class="ri-phone-fill"></i></div>
+              <div>
+                <span class="ci-label" data-tr="Telefon" data-en="Phone">Telefon</span>
+                <span class="ci-val">+90 551 174 75 51</span>
+              </div>
+            </a>
+            <a href="https://github.com/yahyaberke" target="_blank" class="contact-item glass">
+              <div class="ci-icon"><i class="ri-github-fill"></i></div>
+              <div>
+                <span class="ci-label">GitHub</span>
+                <span class="ci-val">github.com/yahyaberke</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/yahya-berke-özçubukcu-112515299/" target="_blank" class="contact-item glass">
+              <div class="ci-icon"><i class="ri-linkedin-box-fill"></i></div>
+              <div>
+                <span class="ci-label">LinkedIn</span>
+                <span class="ci-val">linkedin.com/in/yahya-berke-özçubukcu</span>
+              </div>
+            </a>
+            <a href="https://buymeacoffee.com/yahyaberke" target="_blank" class="contact-item glass">
+              <div class="ci-icon ci-coffee"><i class="ri-cup-fill"></i></div>
+              <div>
+                <span class="ci-label">Buy Me a Coffee</span>
+                <span class="ci-val">buymeacoffee.com/yahyaberke</span>
+              </div>
+            </a>
+            <a href="https://www.youthall.com/tr/me/yahyaberke/" target="_blank" class="contact-item glass">
+              <div class="ci-icon"><i class="ri-user-star-fill"></i></div>
+              <div>
+                <span class="ci-label">Youthall</span>
+                <span class="ci-val">youthall.com/tr/me/yahyaberke</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CV Download Card -->
+          <a href="CV_Yahya_Berke_Ozcubukcu.pdf" download class="cv-download-card glass">
+            <div class="cv-dl-icon"><i class="ri-file-pdf-2-fill"></i></div>
+            <div class="cv-dl-text">
+              <span class="cv-dl-title" data-tr="Özgeçmişimi İndir" data-en="Download My Resume">Özgeçmişimi İndir</span>
+              <span class="cv-dl-sub" data-tr="PDF formatında — güncel ve hazır" data-en="PDF format — up to date and ready">PDF formatında — güncel ve hazır</span>
+            </div>
+            <div class="cv-dl-arrow"><i class="ri-download-2-fill"></i></div>
+          </a>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form id="contactForm" class="contact-form glass" novalidate>
+            <div class="form-group">
+              <label for="name" data-tr="Adınız" data-en="Your Name">Adınız</label>
+              <input type="text" id="name" name="name" required autocomplete="off"/>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" data-tr="E-posta Adresiniz" data-en="Your Email">E-posta Adresiniz</label>
+              <input type="email" id="email" name="email" required autocomplete="off"/>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" data-tr="Mesajınız" data-en="Your Message">Mesajınız</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" id="msgError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span data-tr="Mesajı Gönder" data-en="Send Message">Mesajı Gönder</span>
+              <i class="ri-send-plane-fill"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="ri-checkbox-circle-fill"></i>
+              <span data-tr="Mesajınız gönderildi! Teşekkürler 🎉" data-en="Message sent! Thank you 🎉">Mesajınız gönderildi! Teşekkürler 🎉</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">YB<span class="dot">.</span></div>
+      <p data-tr="Yahya Berke Özçubukcu tarafından ❤️ ile yapıldı" data-en="Made with ❤️ by Yahya Berke Özçubukcu">Yahya Berke Özçubukcu tarafından ❤️ ile yapıldı</p>
+      <div class="footer-socials">
+        <a href="https://github.com/yahyaberke" target="_blank" title="GitHub"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/yahya-berke-özçubukcu-112515299/" target="_blank" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="mailto:yahyaberkeozcubukcu@gmail.com" title="Email"><i class="ri-mail-fill"></i></a>
+        <a href="https://buymeacoffee.com/yahyaberke" target="_blank" title="Buy Me a Coffee"><i class="ri-cup-fill"></i></a>
+        <a href="https://www.youthall.com/tr/me/yahyaberke/" target="_blank" title="Youthall"><i class="ri-user-star-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="ri-arrow-up-line"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
