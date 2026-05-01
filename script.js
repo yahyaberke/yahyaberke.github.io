@@ -261,17 +261,34 @@ contactForm.addEventListener("submit", e => {
   }
 
   if (valid) {
-    // Simulate submission success
     const btn = contactForm.querySelector(".btn-primary");
+    const formData = new FormData(contactForm);
+
     btn.style.opacity = "0.6";
     btn.style.pointerEvents = "none";
-    setTimeout(() => {
-      contactForm.reset();
-      document.getElementById("formSuccess").classList.add("show");
+    btn.querySelector("span").setAttribute("data-tr", "Gönderiliyor...");
+    btn.querySelector("span").textContent = "Gönderiliyor...";
+
+    fetch("https://formspree.io/f/mqenadlj", {
+      method: "POST",
+      body: formData,
+      headers: { "Accept": "application/json" }
+    })
+    .then(response => {
+      if (response.ok) {
+        contactForm.reset();
+        document.getElementById("formSuccess").classList.add("show");
+        setTimeout(() => document.getElementById("formSuccess").classList.remove("show"), 6000);
+      } else {
+        alert("Bir hata oluştu, lütfen tekrar deneyin.");
+      }
+    })
+    .catch(() => alert("Bağlantı hatası, lütfen tekrar deneyin."))
+    .finally(() => {
       btn.style.opacity = "";
       btn.style.pointerEvents = "";
-      setTimeout(() => document.getElementById("formSuccess").classList.remove("show"), 5000);
-    }, 1000);
+      btn.querySelector("span").textContent = currentLang === "tr" ? "Mesajı Gönder" : "Send Message";
+    });
   }
 });
 
