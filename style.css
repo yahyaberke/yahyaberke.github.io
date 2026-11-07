@@ -1696,3 +1696,12 @@ footer {
 @media (max-width: 480px) {
   .gained-cards { grid-template-columns: 1fr; }
 }
+
+/* ===== LINKEDIN UPDATES ===== */
+.prov-linkedin { background: rgba(10,102,194,0.15); border: 1px solid rgba(10,102,194,0.35); color: #60a5fa; }
+.prov-linkedin i { vertical-align: -1px; }
+.post-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+.post-tags span { font-size: 0.72rem; color: var(--text-secondary); }
+#updates .tl-ext-link { margin-bottom: 0; }
+.updates-more { display: flex; justify-content: center; margin-top: 32px; }
+.updates-more .btn { display: inline-flex; align-items: center; gap: 8px; }
