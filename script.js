@@ -8,7 +8,7 @@
 /* ── 0. LANGUAGE DATA ───────────────────────────────────────── */
 const i18n = {
   tr: {
-    typed: ["Yazılım Geliştirici", "Bilgisayar Müh. Öğrencisi", "Freelance Developer", "UEFA Gönüllüsü 🏆", "TFF Lisanslı Hakem", "Flutter Öğrencisi"],
+    typed: ["Yazılım Geliştirici", "Bilgisayar Müh. Öğrencisi", "Freelance Developer", "Full-Stack Geliştirici", "TFF Lisanslı Hakem", "Flutter Öğrencisi"],
     formErrors: {
       nameRequired: "Lütfen adınızı girin.",
       emailRequired: "Lütfen e-posta adresinizi girin.",
@@ -18,7 +18,7 @@ const i18n = {
     }
   },
   en: {
-    typed: ["Software Developer", "Computer Eng. Student", "Freelance Developer", "UEFA Volunteer 🏆", "TFF Licensed Referee", "Flutter Learner"],
+    typed: ["Software Developer", "Computer Eng. Student", "Freelance Developer", "Full-Stack Developer", "TFF Licensed Referee", "Flutter Learner"],
     formErrors: {
       nameRequired: "Please enter your name.",
       emailRequired: "Please enter your email.",
